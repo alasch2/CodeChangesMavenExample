@@ -1,0 +1,10 @@
+/target/
+.classpath
+.project
+.settings/
+*.class
+*.orig
+.idea/
+*.iml
+*.iws
+/local-maven-repo
