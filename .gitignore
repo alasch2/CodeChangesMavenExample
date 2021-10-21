@@ -8,3 +8,5 @@
 *.iml
 *.iws
 /local-maven-repo
+/pom.xml.slback
+/buildSessionId.txt
