@@ -17,4 +17,8 @@ public class Calculator {
     public static void sayHello() {
         System.out.println("Hello");
     }
+
+    public static void sayTwo() {
+        System.out.println("Two");
+    }
 }
