@@ -14,4 +14,7 @@ public class Calculator {
         return a * b;
     }
 
+    public static void sayHello() {
+        System.out.println("Hello");
+    }
 }
