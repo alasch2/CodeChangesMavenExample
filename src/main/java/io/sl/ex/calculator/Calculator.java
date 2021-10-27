@@ -25,4 +25,8 @@ public class Calculator {
     public static void sayThree() {
         System.out.println("Three");
     }
+
+    public void callMoo() {
+        new Moo().moo();
+    }
 }
