@@ -21,4 +21,8 @@ public class Calculator {
     public static void sayTwo() {
         System.out.println("Two");
     }
+
+    public static void sayThree() {
+        System.out.println("Three");
+    }
 }
