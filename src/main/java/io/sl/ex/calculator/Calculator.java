@@ -29,4 +29,8 @@ public class Calculator {
     public void callMoo() {
         new Moo().moo();
     }
+
+    public void callMoo2() {
+        new Moo().moo();
+    }
 }
