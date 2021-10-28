@@ -33,14 +33,14 @@ public class GroupingCollectors {
 	public static List<Person> manipulate(List<Person> persons, String namePrefix) {
 		return persons.stream()
 				.map(p-> {
-					p.setName(namePrefix + p.getName() + ".txt");
+					p.setName(namePrefix + p.getName());
 					return p;
 				})
 				.collect(toList())
 				.stream()
 				.map(p-> {return p;}).map(q-> {return q;}).map(z->{return z;})
 				.map(p-> {
-					p.makeOlder(c-> c.getAge() + 10);
+					p.makeOlder(c-> c.getAge() + 1);
 					return p;
 				})
 //				.map(p-> {
