@@ -122,7 +122,7 @@ public class GroupingCollectors {
         		.collect(partitioningBy(p->p.getAge() >= 21));
     }
 
-    static class NestedFoo {
+    static class NestedFooRenamed {
 		public static Map<Long, List<Person>> foo(List<Person> persons) {
 			return persons.stream()
 					.collect(groupingBy(p->p.getId()));
