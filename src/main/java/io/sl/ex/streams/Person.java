@@ -37,7 +37,7 @@ public class Person {
 	private boolean callUnderToString = false;
 
 	private void underToString() {
-		int i=123;
+		int i=1234;
 		i += 2;
 	}
 	
