@@ -27,8 +27,18 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return String.format("Person (id=%s, name=%s, age=%s, children=%s)", 
-				id, name, age, children);
+		return "Person (id=" + id +
+				", name=" + name +
+				", age=" + age +
+				", children" + children
+				+ ")";
+	}
+	// something here
+	private boolean callUnderToString = false;
+
+	private void underToString() {
+		int i=123;
+		i += 2;
 	}
 	
 	@FunctionalInterface
