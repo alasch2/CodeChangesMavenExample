@@ -23,11 +23,14 @@ public class GroupingCollectors {
 	static {
 		long ctr = initialId;
 		internalRepository = Arrays.asList(
-		new Person(ctr, "Alice", 18),
-		new Person(++ctr, "Bob", 11),
-		new Person(++ctr, "Jim", 10),
-		new Person(++ctr, "Carl", 11)
-		).stream().map(p->{return p;}).collect(toList());
+						new Person(ctr, "Alice", 18),
+						new Person(++ctr, "Bob", 11),
+						new Person(++ctr, "Jim", 10),
+						new Person(++ctr, "Carl", 11)
+				)
+				.stream().map(p->{
+					return p;}
+				).collect(toList());
 	}
 	
 	public static List<Person> manipulate(List<Person> persons, String namePrefix) {
@@ -108,8 +111,17 @@ public class GroupingCollectors {
      * HashMap { 25 => { "Dan" => 1 }, 33 => { "Alice" => 1, "Bob" => 2 } }
      */
     public static Map<Integer, Map<String, Long>> groupByAgeToNameToCount(List<Person> persons) {
-        return persons.stream()
-        		.collect(groupingBy(Person::getAge, groupingBy(Person::getName, counting())));
+        return persons.
+				stream()
+        		.collect(
+        				groupingBy(
+        						Person::getAge,
+						groupingBy(
+								Person::getName,
+								counting()
+						)
+						)
+				);
     }
     
     /**
