@@ -27,15 +27,14 @@ public class Person {
 	public String toString() {
 		return "Person (id=" + id +
 				", name=" + name + ", age=" + age +
-				", children" + children
-				+ ")";
+				", children" + children + ")";
 	}
 	// something here
 	private boolean callUnderToString = false;
 // method documentation
 	private void underToString() {
 		int i=123880;
-		i += 2;
+		i += 33;
 	}
 	
 	@FunctionalInterface
