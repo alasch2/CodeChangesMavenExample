@@ -21,9 +21,7 @@ public class Person {
 		this.children = ImmutableList.copyOf(children);
 	}
 	
-	public void makeOlder(MakeOlder ager) {
-		age = ager.run(this);
-	}
+	public void makeOlder(MakeOlder ager) {		age = ager.run(this);	}
 
 	@Override
 	public String toString() {
@@ -35,7 +33,7 @@ public class Person {
 	}
 	// something here
 	private boolean callUnderToString = false;
-
+// method documentation
 	private void underToString() {
 		int i=123000;
 		i += 2;
