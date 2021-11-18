@@ -26,7 +26,8 @@ public class Person {
 	@Override
 	public String toString() {
 		return "Person (id=" + id +
-				", name=" + name + ", age=" + age +
+				", name=" + name
+				+ ", age =" + age +
 				", children" + children + ")";
 	}
 	// something here
@@ -34,7 +35,7 @@ public class Person {
 // method documentation
 	private void underToString() {
 		int i=123880;
-		i += 33;
+		i += 23;
 	}
 	
 	@FunctionalInterface
