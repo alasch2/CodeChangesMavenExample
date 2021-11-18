@@ -24,13 +24,6 @@ public class Person {
 	
 	public void makeOlder(MakeOlder ager) {		age = ager.run(this);	}
 
-	@Override
-	public String toString() {
-		return "Person (id=" + id +
-				", name=" + name + ", age =" + age
-				+ ", more=" + more +
-				", children" + children + ")";
-	}
 	// something here
 	private boolean callUnderToString = false;
 // method documentation
@@ -42,6 +35,14 @@ public class Person {
 	@FunctionalInterface
 	static interface MakeOlder {
 		int run(Person p);
+	}
+
+	@Override
+	public String toString() {
+		return "Person (id=" + id +
+				", name=" + name + ", age =" + age
+				+ ", more=" + more +
+				", children" + children + ")";
 	}
 	
 }
