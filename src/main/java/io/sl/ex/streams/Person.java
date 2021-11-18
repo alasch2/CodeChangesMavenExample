@@ -13,7 +13,6 @@ public class Person {
 	private String name;
 	private int age;
 	private List<Person> children;
-	private String more = "MORE";
 
 	public Person(long id, String name, int age, Person... children) {
 		this.id = id;
@@ -41,8 +40,7 @@ public class Person {
 	public String toString() {
 		return "Person (id=" + id +
 				", name=" + name + ", age =" + age
-				+ ", more=" + more +
 				", children" + children + ")";
 	}
-	
+
 }
