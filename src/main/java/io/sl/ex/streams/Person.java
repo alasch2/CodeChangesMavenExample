@@ -39,7 +39,7 @@ public class Person {
 	@Override
 	public String toString() {
 		return "Person (id=" + id +
-				", name=" + name + ", age =" + age
+				", name=" + name + ", age =" + age +
 				", children" + children + ")";
 	}
 
