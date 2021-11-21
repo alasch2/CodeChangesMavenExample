@@ -44,4 +44,8 @@ public class Person {
 				", children:" + children + ")";
 	}
 
+	public void anotherMethod() {
+		System.out.print("Let's check the hash-code");
+	}
+
 }
