@@ -34,6 +34,11 @@ public class Person {
 		age = ager.run(this);
 	}
 
+	public void methodAaaa() {
+		int i=2;
+		System.out.print(i+2);
+	}
+
 	// something here
 	private boolean callUnderToString = true;
 // method documentation
