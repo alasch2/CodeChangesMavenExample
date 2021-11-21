@@ -20,11 +20,21 @@ public class Person {
 		this.age = age;
 		this.children = ImmutableList.copyOf(children);
 	}
-	
-	public void makeOlder(MakeOlder ager) {		age = ager.run(this);	}
+
+	@Override
+	public String toString() {
+		return "Person (id:" + id +
+				", Name :" + name + "test text text"
+				+ ", age :" + age +
+				", children:" + children + ")";
+	}
+
+	public void makeOlder(MakeOlder ager) {
+		age = ager.run(this);
+	}
 
 	// something here
-	private boolean callUnderToString = false;
+	private boolean callUnderToString = true;
 // method documentation
 	private void underToString() {
 		int i=123880;
@@ -38,14 +48,6 @@ public class Person {
 
 	public void anotherMethod() {
 		System.out.println("Let's check the hash-code");
-	}
-
-	@Override
-	public String toString() {
-		return "Person (id:" + id +
-				", Name :" + name + "another text"
-				+ ", age :" + age +
-				", children:" + children + ")";
 	}
 
 }
