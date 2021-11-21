@@ -29,7 +29,7 @@ public class Person {
 				", children:" + children + ")";
 	}
 
-	public void makeOlder(MakeOlder ager) {	age = ager.run(this); }
+//	public void makeOlder(MakeOlder ager) {	age = ager.run(this); }
 
 	// something here
 	private boolean callUnderToString = true;
