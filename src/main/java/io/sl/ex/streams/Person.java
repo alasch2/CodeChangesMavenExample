@@ -28,7 +28,7 @@ public class Person {
 // method documentation
 	private void underToString() {
 		int i=123880;
-		i += 223;
+		i += 23;
 	}
 	
 	@FunctionalInterface
