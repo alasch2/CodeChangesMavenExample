@@ -15,10 +15,11 @@ public class Person {
 	private List<Person> children;
 
 	public Person(long id, String name, int age, Person... children) {
-		this.id = id;
 		this.name = name;
 		this.age = age;
+		this.id = id;
 		this.children = ImmutableList.copyOf(children);
+		System.out.println("created");
 	}
 
 	@Override
