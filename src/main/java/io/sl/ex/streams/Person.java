@@ -29,7 +29,7 @@ public class Person {
 				", children:" + children + ")";
 	}
 
-//	public void makeOlder(MakeOlder ager) {	age = ager.run(this); }
+	public void makeOlder(MakeOlder ager) {	age = ager.run(this); }
 
 	// something here
 	private boolean callUnderToString = true;
@@ -44,8 +44,8 @@ public class Person {
 		int run(Person p);
 	}
 
-	public void anotherMethod() {
-		System.out.println("Let's check the hash-code");
-	}
+//	public void anotherMethod() {
+//		System.out.println("Let's check the hash-code");
+//	}
 
 }
