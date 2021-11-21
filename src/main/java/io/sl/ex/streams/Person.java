@@ -36,16 +36,16 @@ public class Person {
 		int run(Person p);
 	}
 
+	public void anotherMethod() {
+		System.out.println("Let's check the hash-code");
+	}
+
 	@Override
 	public String toString() {
 		return "Person (id:" + id +
-				", Name :" + name
+				", Name :" + name + "another text"
 				+ ", age :" + age +
 				", children:" + children + ")";
-	}
-
-	public void anotherMethod() {
-		System.out.println("Let's check the hash-code");
 	}
 
 }
