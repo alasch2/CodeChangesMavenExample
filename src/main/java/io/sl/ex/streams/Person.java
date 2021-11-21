@@ -45,7 +45,7 @@ public class Person {
 	}
 
 	public void anotherMethod() {
-		System.out.print("Let's check the hash-code");
+		System.out.println("Let's check the hash-code");
 	}
 
 }
